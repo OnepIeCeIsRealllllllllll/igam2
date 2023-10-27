@@ -1,0 +1,94 @@
+body{
+    font-family: sans-serif;
+}
+
+.content{
+    border: 3px solid gray;
+    width: 1024px;
+    margin:auto
+}
+
+.flex-top{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.noti{
+    position: absolute;
+    display: grid;
+    background-color: tomato;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 999px;
+    right: 0;
+    bottom: 0;
+    place-items: center;
+    color: white;
+}
+
+.avatar{
+    background-color: grey;
+    overflow: auto; 
+    width: 128px;
+    height: 128px;
+    border-radius: 9999px;
+}
+
+.flex-item1{
+    position: relative;
+    margin-top: 48px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex-top a {
+    text-decoration: none;
+    color: black;
+}
+
+.flex-top a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.flex-item2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.flex-item2 input {
+    text-indent: 2px;
+}
+
+.flex-item2 button:hover {
+    cursor: pointer;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(4, 300px);
+    /* 4 block ;1block == 300px */
+    gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+}
+
+.gallery-item{
+    background-color: aqua;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.on-hover{
+    text-decoration: none;
+    color: black;
+}
+
+.on-hover{
+    text-decoration: underline;
+    color:blueviolet;
+}

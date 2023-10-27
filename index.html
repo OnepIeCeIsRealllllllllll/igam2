@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script>
+        function display(){
+            document.getElementById("Myusername").innerHTML = document.getElementById("Username").value + "'s Gallery"
+        }
+
+        function setImage(){
+            document.getElementById("proflieimg").style.backgroundImage = "url(" + document.getElementById("Image_url").value + ")" ; //url(*link to your image*)
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="flex-top">
+            <div>
+                <div class="flex-item1">
+                    <!-- avatar -->
+                    <div class="avatar" id="proflieimg"></div>
+                    <div class="noti"><p>1</p></div>
+                </div>
+                
+            </div>
+            <div>
+                <a href="https://github.com/OnepIeCeIsRealllllllllll"  style="font-weight:700;" id="Myusername">User name, Gallery</a>
+                </div>
+            <!-- <div class="picture"></div> -->
+            <div class="flex-item2">
+                <!-- input -->
+                <div><label>User name</label><input type="text" style="margin-left: 5px;" id="Username"><button style="margin-left: 5px" onclick="display()">set</button></div>
+                <div><label>Image URL</label><input type="text" style="margin-left: 5px;" id="Image_url"><button style="margin-left: 5px" onclick="setImage()">set</button></div>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="gallery-item" style="background-image:url(https://i.pinimg.com/474x/ec/98/06/ec980613cef40f9e8777ebe767630896.jpg)"></div>
+            <div class="gallery-item" style="background-image: url(https://i.pinimg.com/736x/1b/49/1e/1b491eb3cbdd740477e8b31a2917372f.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(https://i.pinimg.com/474x/f7/d3/95/f7d3950256d656e28bc4beb7691c1f8d.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(https://i.pinimg.com/474x/55/36/b6/5536b619b16620c13cd50063120e2c90.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(https://i.pinimg.com/564x/ff/ee/71/ffee71c189a24bd265ea04a8d88ba346.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(https://i.pinimg.com/564x/0d/7f/0a/0d7f0a4fba175065175acca7dfb07979.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(https://i.pinimg.com/564x/be/c1/7f/bec17f371305db0eb7efa303032900e4.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(https://i.pinimg.com/564x/ab/91/3f/ab913f7829fe61f1bfe9b9633b8e18b8.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(https://i.pinimg.com/564x/f2/2c/96/f22c966f0e36b38066227005dc442e3e.jpg);"></div>
+        </div>
+    </div>
+</body>
+</html>
